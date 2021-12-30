@@ -40,9 +40,9 @@
                       <td>
                         <div class="form-check form-switch">
                           @if( $user->status == 1 )
-                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked>
+                          <input class="form-check-input" data-id="{{ $user->id }}" id="flexSwitchCheckChecked_{{ $user->id }}" type="checkbox" checked>
                           @else
-                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox">
+                          <input class="form-check-input" data-id="{{ $user->id }}" id="flexSwitchCheckChecked_{{ $user->id }}" type="checkbox">
                           @endif
                         </div>
                       </td>
