@@ -38,7 +38,13 @@
                       </td>
                       @endif
                       <td>
-                          
+                        <div class="form-check form-switch">
+                          @if( $user->status == 1 )
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked>
+                          @else
+                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox">
+                          @endif
+                        </div>
                       </td>
                     </tr>
                     @php
